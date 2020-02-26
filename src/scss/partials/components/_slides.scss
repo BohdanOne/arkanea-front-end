@@ -1,0 +1,23 @@
+/*
+TODO:
+ - check and match class names injected by tiny-slider library
+ - move rules to /vendor/_tns
+
+*/
+
+.c-slides__controls {
+    display: flex;
+}
+
+.c-slides__control-dot {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.tns-nav-active {
+    background-color: red;
+}
