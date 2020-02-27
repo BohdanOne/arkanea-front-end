@@ -1,0 +1,44 @@
+.c-stories__list {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-stories__item {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 30%;
+    max-width: 380px;
+
+    @include media('<t-m') {
+        width: 49%;
+    }
+
+    @include media('<m') {
+        width: 100%;
+    }
+}
+
+.c-stories__img {
+    width: 100%;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.c-stories__text {
+    color: $color_gray_stories;
+    font-size: $font_size_regular;
+    font-weight: $font_light;
+}
+
+.c-stories__link {
+    color: $color_black_stories;
+    font-size: $font_size_button;
+}

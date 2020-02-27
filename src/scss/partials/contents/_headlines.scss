@@ -20,5 +20,15 @@
     @include media("<m-t") {
         font-size: $font_size_heading--contact;
     }
+}
 
+.t-head--stories {
+    font-size: $font_size_heading--stories;
+    font-weight: $font_semi-bold;
+
+    color: $color_black_stories;
+
+    @include media("<m-t") {
+        font-size: $font_size_heading--contact;
+    }
 }

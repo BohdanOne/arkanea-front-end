@@ -1,0 +1,17 @@
+.l-stories {
+    padding: 80px 0;
+    width: 100%;
+    background: $color_white_stories;
+}
+
+.l-stories__divider {
+    width: 67px;
+    height: 2px;
+
+    margin: 50px 0;
+
+    background-color: $color_black_stories;
+    opacity: 50%;
+
+    border-radius: 1px;
+}

@@ -33,16 +33,11 @@ body {
 a {
     text-decoration: none;
 
-    color: $color_black;
-
-    transition: opacity $transition_speed ease-in-out, color $transition_speed ease-in-out;
+    transition: color $transition_speed ease-in-out;
 
     &:hover {
         text-decoration: none;
-
-        @include media(">t") {
-            color: $color_black;
-        }
+        color: $color_button_bg;
     }
 }
 
