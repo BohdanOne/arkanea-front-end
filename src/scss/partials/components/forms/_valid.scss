@@ -1,3 +1,13 @@
+.f-validation-message {
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: $font_size_placeholder;
+    font-weight: $font_regular;
+    color: $color_button_bg;
+}
+
 .parsley-error {
     border-color: $color_red;
 }
