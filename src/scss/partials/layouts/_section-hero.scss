@@ -1,0 +1,16 @@
+.l-hero {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: 345px;
+
+    background-color: $color_black;
+    background-image: url('/static/img/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-size: cover;
+
+    @include media('>t-m') {
+        background-image: url('/static/img/hero-image@2x.jpg');
+    }
+}
