@@ -43,6 +43,7 @@
 .c-nav__label {
     text-transform: uppercase;
     font-size: $font_size_regular;
+    font-weight: $font_regular;
     color: $color_text;
     &:hover {
         color: $color_button_bg;

@@ -1,0 +1,7 @@
+.f-form--quote {
+    display: flex;
+
+    @include media("<m") {
+        flex-direction: column;
+    }
+}

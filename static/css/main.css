@@ -350,10 +350,10 @@ template {
    ========================================================================== */
 /* Clearfixes
    ========================================================================== */
-.t-head:first-child, .t-content:first-child, .t-content p:first-child, .c-actions:first-child {
+.t-head:first-child, .t-content:first-child, .c-actions:first-child {
   margin-top: 0; }
 
-.t-head:last-child, .t-content:last-child, .t-content p:last-child, .c-actions:last-child {
+.t-head:last-child, .t-content:last-child, .c-actions:last-child {
   margin-bottom: 0; }
 
 .parsley-errors-list {
@@ -485,10 +485,20 @@ li {
 /* Head
    ========================================================================== */
 .t-head {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.t-head--main {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #f3f3f3; }
+  @media (max-width: 369px) {
+    .t-head--main {
+      font-size: 1.875rem; } }
 
 .t-content p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 1em 0; }
 
 .t-content ol,
 .t-content ul {
@@ -529,6 +539,17 @@ li {
 .t-content address {
   font-style: normal; }
 
+.t-content--hero p {
+  margin: 1em 0;
+  max-width: 550px;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 300; }
+
+.t-content--hero--accent {
+  font-weight: 600; }
+
 .t-content--alt {
   font-size: 1.6rem; }
 
@@ -539,8 +560,20 @@ li {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+  width: 180px;
+  height: 50px;
+  padding: 0 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
   border: 0;
-  background: none; }
+  border-radius: 4px;
+  background: #f7564b;
+  color: #ecf0f1;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out; }
+  .c-btn:hover {
+    color: #383838; }
   .c-btn:disabled {
     opacity: 0.5;
     cursor: default; }
@@ -665,12 +698,25 @@ select::-ms-expand {
 :-moz-placeholder {
   opacity: 1; }
 
+.f-form--quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 669px) {
+    .f-form--quote {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
 .f-field {
-  margin-bottom: 3rem; }
+  margin-bottom: 20px; }
 
 .f-control-wrapper,
 .f-control {
-  position: relative; }
+  position: relative;
+  border: none;
+  border-radius: 4px; }
 
 /* Default
    ========================================================================== */
@@ -697,7 +743,39 @@ select::-ms-expand {
 /* Text
    ========================================================================== */
 .f-control--text {
-  height: 4.5rem; }
+  height: 50px;
+  width: 280px;
+  padding: 1rem;
+  margin-right: 20px;
+  border: none;
+  border-radius: 4px;
+  background: #ededed;
+  color: #383838; }
+  .f-control--text::-webkit-input-placeholder {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .f-control--text::-moz-placeholder {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .f-control--text:-ms-input-placeholder {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .f-control--text::-ms-input-placeholder {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .f-control--text::placeholder {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding: 1rem; }
 
 /* Radio / checkbox - base
    ========================================================================== */
@@ -896,7 +974,7 @@ TODO:
 .l-inner {
   position: relative;
   width: 100%;
-  max-width: 1183px;
+  max-width: 1223px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -956,6 +1034,7 @@ TODO:
 .c-nav__label {
   text-transform: uppercase;
   font-size: 1.25rem;
+  font-weight: 400;
   color: #f3f3f3; }
   .c-nav__label:hover {
     color: #f7564b; }
@@ -972,7 +1051,7 @@ TODO:
 .l-hero {
   width: 100%;
   min-height: 100vh;
-  padding-top: 345px;
+  padding: 345px 0 120px;
   background-color: #000000;
   background-image: url("/static/img/hero-image.jpg");
   background-repeat: no-repeat;

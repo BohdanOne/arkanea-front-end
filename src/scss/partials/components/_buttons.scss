@@ -4,8 +4,26 @@
     vertical-align: middle;
     cursor: pointer;
 
+    width: 180px;
+    height: 50px;
+
+    padding: 0 1rem;
+
+    font-family: inherit;
+    font-size: $font_size_button;
+    font-weight: $font_regular;
+
     border: 0;
-    background: none;
+    border-radius: 4px;
+    
+    background: $color_button_bg;
+    color: $color_button_text;
+
+    transition: color $transition_speed ease-in-out;
+
+    &:hover {
+        color: $color_black_stories;
+    }
 
     &:disabled {
         opacity: 0.5;

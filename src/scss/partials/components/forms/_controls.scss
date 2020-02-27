@@ -1,6 +1,9 @@
 .f-control-wrapper,
 .f-control {
     position: relative;
+
+    border: none;
+    border-radius: 4px;
 }
 
 /* Default
@@ -29,5 +32,22 @@
 /* Text
    ========================================================================== */
 .f-control--text {
-    height: 4.5rem;
+    height: 50px;
+    width: 280px;
+
+    padding: 1rem;
+    margin-right: 20px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: $color_input-bg;
+    color: $color_black_stories;
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: $font_size_placeholder;
+        font-weight: $font_light;
+        padding: 1rem;
+    }
 }
