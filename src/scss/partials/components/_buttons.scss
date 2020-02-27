@@ -15,7 +15,7 @@
 
     border: 0;
     border-radius: 4px;
-    
+
     background: $color_button_bg;
     color: $color_button_text;
 
@@ -66,25 +66,40 @@
 }
 
 .c-btn--hamburger {
-    display: none;
-
     width: 60px;
     height: 45px;
     transform: rotate(0deg);
     transition: transform .5s ease-in-out;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    @include media('>849px') {
+        display: none;
+    }
 }
 
 .c-btn--hamburger span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: .5rem;
     width: 100%;
-    background: #d3531a;
+    background: $color_text;
     border-radius: 9px;
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
+}
+
+.c-btn--hamburger:hover span,
+.is-scrolled .c-btn--hamburger:hover span {
+    background: $color_button_bg;
+}
+
+.is-scrolled .c-btn--hamburger span {
+    background: $color_black_stories;
 }
 
 .c-btn--hamburger span:nth-child(1) {

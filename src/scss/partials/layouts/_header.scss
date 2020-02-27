@@ -11,49 +11,48 @@
 
     background: transparent;
 
-    transition:
-        transform $transition_speed ease-in-out,
+    transition: transform $transition_speed ease-in-out,
         background $transition_speed ease-in-out;
+
+    &.full-screen {
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+        background: $color_black_stories;
+    }
 }
 
 .l-header__navbar {
+    width: 100%;
+    max-width: $size_inner;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.l-header.full-screen .l-header__navbar {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 .c-logo__svg {
-     fill: $color_text;
-     transition: fill $transition_speed ease-in-out;
+    fill: $color_text;
+    transition: fill $transition_speed ease-in-out;
 
-     &:hover {
-         cursor: pointer;
-         fill: $color_button_bg;
-     }
- }
-
-.c-nav__list {
-    display: flex;
-}
-
-.c-nav__item {
-    margin-left: 1rem;
-}
-
-.c-nav__label {
-    text-transform: uppercase;
-    font-size: $font_size_regular;
-    font-weight: $font_regular;
-    color: $color_text;
     &:hover {
-        color: $color_button_bg;
+        cursor: pointer;
+        fill: $color_button_bg;
     }
 }
 
 .l-header.is-scrolled {
-        transform: translateY(-75px);
+    transform: translateY(-75px);
 
-        background: $color_text;
+    background: $color_text;
 
     .c-logo__svg {
         fill: $color_black_stories;
