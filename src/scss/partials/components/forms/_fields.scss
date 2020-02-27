@@ -1,3 +1,9 @@
 .f-field {
     margin-bottom: 20px;
+
+    display: inline-block;
+
+    &--textarea {
+        display: block;
+    }
 }

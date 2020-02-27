@@ -33,7 +33,7 @@
    ========================================================================== */
 .f-control--text {
     height: 50px;
-    width: 280px;
+    width: 180px;
 
     padding: 1rem;
     margin-right: 20px;
@@ -48,6 +48,16 @@
         font-family: inherit;
         font-size: $font_size_placeholder;
         font-weight: $font_light;
-        padding: 1rem;
     }
+
+    &--hero {
+        width: 280px;
+    }
+}
+
+.f-control--textarea {
+    @extend .f-control--text;
+    width: 385px;
+    max-width: 100%;
+    height: 130px;
 }

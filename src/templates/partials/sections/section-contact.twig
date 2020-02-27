@@ -1,22 +1,22 @@
-<section class="l-sec-contact">
+<section class="l-contact">
 	<div class="l-inner">
-		<div class="l-contact">
-			<h2 class="t-head t-head--contact l-contact__title">
-				tell us about your requirement
-			</h2>
+        <h2 class="t-head t-head--contact">
+            tell us about your requirement
+        </h2>
 
-			<form class="f-form f-form--contact l-contact__form">
-				<h3 class="t-head t-head--contact-subhead l-contact__form__title">
+		<div class="l-contact__content">
+			<form class="f-form f-form--contact">
+				<h3 class="t-head t-head--contact-subhead">
 					contact us
 				</h3>
 				<div class="f-field">
-					<input type="text" name="name" aria-label="Name" class="f-control" placeholder="*Name" required>
+					<input type="text" name="name" aria-label="Name" class="f-control--text" placeholder="*Name" required>
 				</div>
 				<div class="f-field">
-					<input type="email" name="e-mail" aria-label="E-Mail Address" class="f-control" placeholder="*Your Email Address" required>
+					<input type="email" name="e-mail" aria-label="E-Mail Address" class="f-control--text" placeholder="*Your Email Address" required>
 				</div>
-				<div class="f-field">
-					<textarea cols="2" rows="2" name="message" aria-label="Message" class="f-control" placeholder="*Your Message" required></textarea>
+				<div class="f-field f-field--textarea">
+					<textarea cols="2" rows="2" name="message" aria-label="Message" class="f-control--textarea" placeholder="*Your Message" required></textarea>
 				</div>
 				<div class="f-actions">
 					<button type="submit" aria-label="Submit Message" class="c-btn">
@@ -25,24 +25,28 @@
 				</div>
 			</form>
 
-			<div class="l-contact__info t-content">
-				<h3 class="t-head t-head--contact-subhead l-contact__info__title">
+			<div class="l-contact__info">
+				<h3 class="t-head t-head--contact-subhead">
 					address
 				</h3>
-				<address>
+				<address class="l-contact__info__content">
 					ARKENEA LLC 47 S 2ND ST #152,<br>
 					SAN JOSE, CA 95113, USA.
 				</address>
 
-				<h3 class="t-head t-head--contact-subhead l-contact__info__title">
+				<h3 class="t-head t-head--contact-subhead">
 					phone
 				</h3>
-				<a href="tel:+4283501761">(428) 350-1761</a>
+                <p class="l-contact__info__content">
+				    <a href="tel:+4283501761">(428) 350-1761</a>
+                </p>
 
-				<h3 class="t-head t-head--contact-subhead l-contact__info__title">
+				<h3 class="t-head t-head--contact-subhead">
 					email
 				</h3>
-				<a href="mailto:contact@arkenea.com">contact@arkenea.com</a>
+                <p class="l-contact__info__content">
+				    <a href="mailto:contact@arkenea.com">contact@arkenea.com</a>
+                </p>
 			</div>
 		</div>
 	</div>

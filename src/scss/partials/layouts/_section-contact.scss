@@ -1,0 +1,43 @@
+.l-contact {
+    padding-top: 80px;
+
+    background: $color_white;
+}
+
+.l-contact__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include media('<810px') {
+        flex-direction: column;
+    }
+}
+
+.l-contact__info {
+    text-align: right;
+
+    padding-bottom: 80px;
+
+    @include media('<810px') {
+        text-align: left;
+    }
+}
+
+.l-contact__info__content {
+    margin-bottom: 20px;
+
+    font: inherit;
+    font-size: $font_size_regular;
+    font-weight: $font_regular;
+    text-transform: uppercase;
+
+    color: $color_contact_text;
+
+    a {
+        color: $color_contact_text;
+
+        &:hover {
+            color: $color_button_bg;
+        }
+    }
+}

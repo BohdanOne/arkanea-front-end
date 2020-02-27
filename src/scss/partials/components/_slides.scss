@@ -16,10 +16,13 @@
 }
 
 .c-slides__pagination {
+    appearance: none;
+
     width: 10px;
     height: 10px;
     margin: 10px;
 
+    border: none;
     border-radius: 50%;
 
     background-color: $color_slide_pagination;

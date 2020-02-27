@@ -498,9 +498,19 @@ li {
   font-size: 2.25rem;
   font-weight: 600;
   color: #383838; }
-  @media (max-width: 369px) {
-    .t-head--stories {
-      font-size: 1.875rem; } }
+
+.t-head--contact {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #666;
+  text-align: center;
+  margin-bottom: 70px; }
+
+.t-head--contact-subhead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px; }
 
 .t-content p {
   margin: 1em 0; }
@@ -714,8 +724,14 @@ select::-ms-expand {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
+.f-form--contact {
+  margin-bottom: 80px; }
+
 .f-field {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: inline-block; }
+  .f-field--textarea {
+    display: block; }
 
 .f-control-wrapper,
 .f-control {
@@ -747,40 +763,42 @@ select::-ms-expand {
 
 /* Text
    ========================================================================== */
-.f-control--text {
+.f-control--text, .f-control--textarea {
   height: 50px;
-  width: 280px;
+  width: 180px;
   padding: 1rem;
   margin-right: 20px;
   border: none;
   border-radius: 4px;
   background: #ededed;
   color: #383838; }
-  .f-control--text::-webkit-input-placeholder {
+  .f-control--text::-webkit-input-placeholder, .f-control--textarea::-webkit-input-placeholder {
     font-family: inherit;
     font-size: 0.875rem;
-    font-weight: 300;
-    padding: 1rem; }
-  .f-control--text::-moz-placeholder {
+    font-weight: 300; }
+  .f-control--text::-moz-placeholder, .f-control--textarea::-moz-placeholder {
     font-family: inherit;
     font-size: 0.875rem;
-    font-weight: 300;
-    padding: 1rem; }
-  .f-control--text:-ms-input-placeholder {
+    font-weight: 300; }
+  .f-control--text:-ms-input-placeholder, .f-control--textarea:-ms-input-placeholder {
     font-family: inherit;
     font-size: 0.875rem;
-    font-weight: 300;
-    padding: 1rem; }
-  .f-control--text::-ms-input-placeholder {
+    font-weight: 300; }
+  .f-control--text::-ms-input-placeholder, .f-control--textarea::-ms-input-placeholder {
     font-family: inherit;
     font-size: 0.875rem;
-    font-weight: 300;
-    padding: 1rem; }
-  .f-control--text::placeholder {
+    font-weight: 300; }
+  .f-control--text::placeholder, .f-control--textarea::placeholder {
     font-family: inherit;
     font-size: 0.875rem;
-    font-weight: 300;
-    padding: 1rem; }
+    font-weight: 300; }
+  .f-control--text--hero {
+    width: 280px; }
+
+.f-control--textarea {
+  width: 385px;
+  max-width: 100%;
+  height: 130px; }
 
 /* Radio / checkbox - base
    ========================================================================== */
@@ -1009,9 +1027,13 @@ input:checked + .f-choose__indicator:after {
           justify-content: center; }
 
 .c-slides__pagination {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 10px;
   height: 10px;
   margin: 10px;
+  border: none;
   border-radius: 50%;
   background-color: #f5f5f5;
   opacity: 50%;
@@ -1140,6 +1162,43 @@ input:checked + .f-choose__indicator:after {
   @media (min-width: 981px) {
     .l-slides {
       background-image: url("/static/img/slides-bg@2x.jpg"); } }
+
+.l-contact {
+  padding-top: 80px;
+  background: #fff; }
+
+.l-contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 809px) {
+    .l-contact__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.l-contact__info {
+  text-align: right;
+  padding-bottom: 80px; }
+  @media (max-width: 809px) {
+    .l-contact__info {
+      text-align: left; } }
+
+.l-contact__info__content {
+  margin-bottom: 20px;
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #888; }
+  .l-contact__info__content a {
+    color: #888; }
+    .l-contact__info__content a:hover {
+      color: #f7564b; }
 
 /* Vendor
    @mixin ========================================================================= */
