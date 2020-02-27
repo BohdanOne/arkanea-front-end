@@ -57,9 +57,15 @@
 
     .c-logo__svg {
         fill: $color_black_stories;
+        &:hover {
+            fill: $color_button_bg;
+        }
     }
 
     .c-nav__label {
         color: $color_black_stories;
+        &:hover {
+            color: $color_button_bg;
+        }
     }
 }

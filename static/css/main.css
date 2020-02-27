@@ -1095,8 +1095,12 @@ input:checked + .f-choose__indicator:after {
   background: #f3f3f3; }
   .l-header.is-scrolled .c-logo__svg {
     fill: #383838; }
+    .l-header.is-scrolled .c-logo__svg:hover {
+      fill: #f7564b; }
   .l-header.is-scrolled .c-nav__label {
     color: #383838; }
+    .l-header.is-scrolled .c-nav__label:hover {
+      color: #f7564b; }
 
 .l-hero {
   width: 100%;
