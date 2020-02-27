@@ -1,23 +1,29 @@
-/*
-TODO:
- - check and match class names injected by tiny-slider library
- - move rules to /vendor/_tns
-
-*/
-
-.c-slides__controls {
-    display: flex;
+.c-slides__item {
+    text-align: center;
+    color: $color_text;
+    font-size: $font_size_hero !important;
+    font-weight: $font_light;
 }
 
-.c-slides__control-dot {
+.c-slides__text--author__desc {
+    font-weight: $font_regular;
+}
+
+.c-slides__controls {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.c-slides__pagination {
     width: 10px;
     height: 10px;
     margin: 10px;
-    border-radius: 50%;
-    background-color: black;
-    cursor: pointer;
-}
 
-.tns-nav-active {
-    background-color: red;
+    border-radius: 50%;
+
+    background-color: $color_slide_pagination;
+    opacity: 50%;
+
+    cursor: pointer;
 }

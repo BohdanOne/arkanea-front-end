@@ -990,27 +990,32 @@ input:checked + .f-choose__indicator:after {
   color: #383838;
   font-size: 1rem; }
 
-/*
-TODO:
- - check and match class names injected by tiny-slider library
- - move rules to /vendor/_tns
+.c-slides__item {
+  text-align: center;
+  color: #f3f3f3;
+  font-size: 1.5rem !important;
+  font-weight: 300; }
 
-*/
+.c-slides__text--author__desc {
+  font-weight: 400; }
+
 .c-slides__controls {
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.c-slides__control-dot {
+.c-slides__pagination {
   width: 10px;
   height: 10px;
   margin: 10px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #f5f5f5;
+  opacity: 50%;
   cursor: pointer; }
-
-.tns-nav-active {
-  background-color: red; }
 
 /* Layouts
    @mixin ========================================================================= */
@@ -1118,6 +1123,19 @@ TODO:
   background-color: #383838;
   opacity: 50%;
   border-radius: 1px; }
+
+.l-slides {
+  width: 100%;
+  min-height: 400px;
+  padding: 130px 0 40px;
+  background-color: #000000;
+  background-image: url("/static/img/slides-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-size: cover; }
+  @media (min-width: 981px) {
+    .l-slides {
+      background-image: url("/static/img/slides-bg@2x.jpg"); } }
 
 /* Vendor
    @mixin ========================================================================= */
@@ -1611,6 +1629,11 @@ TODO:
 
 .slick-disabled {
   display: none !important; }
+
+/* Tiny-Slider
+   ========================================================================== */
+.tns-nav-active {
+  opacity: 100%; }
 
 /* Modifiers
    @mixin ========================================================================= */
