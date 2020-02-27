@@ -896,7 +896,7 @@ TODO:
 .l-inner {
   position: relative;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1183px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -905,7 +905,82 @@ TODO:
 /* Page
    ========================================================================== */
 .l-page {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
+
+.l-header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 150px;
+  width: 100%;
+  background: transparent;
+  -webkit-transition: background 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition: background 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, background 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, background 200ms ease-in-out, -webkit-transform 200ms ease-in-out; }
+
+.l-header__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.c-logo__svg {
+  fill: #f3f3f3;
+  -webkit-transition: fill 200ms ease-in-out;
+  transition: fill 200ms ease-in-out; }
+  .c-logo__svg:hover {
+    cursor: pointer;
+    fill: #f7564b; }
+
+.c-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.c-nav__item {
+  margin-left: 1rem; }
+
+.c-nav__label {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #f3f3f3; }
+  .c-nav__label:hover {
+    color: #f7564b; }
+
+.l-header.is-scrolled {
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  background: #f3f3f3; }
+  .l-header.is-scrolled .c-logo__svg {
+    fill: #383838; }
+  .l-header.is-scrolled .c-nav__label {
+    color: #383838; }
+
+.l-hero {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 345px;
+  background-color: #000000;
+  background-image: url("/static/img/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-size: cover; }
+  @media (min-width: 981px) {
+    .l-hero {
+      background-image: url("/static/img/hero-image@2x.jpg"); } }
 
 /* Vendor
    @mixin ========================================================================= */

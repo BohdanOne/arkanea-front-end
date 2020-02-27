@@ -1,13 +1,13 @@
-import { tns } from "tiny-slider/src/tiny-slider";
+import { tns } from 'tiny-slider/src/tiny-slider';
 
 const initializeSlider = () => {
   const slider = tns({
-    container: ".c-slides__list",
+    container: '.c-slides__list',
     items: 1,
-    slideBy: "page",
+    slideBy: 'page',
     nav: true,
-    navContainer: ".c-slides__controls",
-    navPosition: "bottom",
+    navContainer: '.c-slides__controls',
+    navPosition: 'bottom',
     arrowKeys: true,
     controls: false,
     touch: true,
