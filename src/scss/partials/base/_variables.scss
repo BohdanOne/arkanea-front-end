@@ -35,9 +35,30 @@ $scotch-colors: (
 
 /* Fonts
 ========================================================================== */
-$font_raleway:        'Raleway';
+$font_montserrat:        'Montserrat';
 
-$font_normal:          $font_raleway, Arial, sans-serif;
+$font_normal:          $font_montserrat, Arial, sans-serif;
+
+/* Font Sizes
+========================================================================== */
+$font_size_m: 12px;
+$font_size_t: 14px;
+$font_size_l: 16px;
+
+$font_size_regular: 1.25rem;
+$font_size_button: 1rem;
+$font_size_placeholder: .875rem;
+$font_size_hero: 1.5rem;
+$font_size_heading--main: 3.75rem;
+$font_size_heading--contact: 1.875rem;
+$font_size_copyright: .9375rem;
+
+/* Font Weights
+========================================================================== */
+$font_light: 300;
+$font_regular: 400;
+$font_semi-bold: 600;
+$font_bold: 700;
 
 /* Animations
 ========================================================================== */
@@ -69,9 +90,3 @@ $breakpoints: (
     m-s: $breakpoint_mobile_small,
     m-t: $breakpoint_mobile_thin
 );
-
-/* body {
-    @include media("<=t") {
-        background: blue;
-    }
-} */

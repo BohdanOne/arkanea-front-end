@@ -2,7 +2,16 @@
 /* Base
    ========================================================================== */
 html {
-    font-size: 62.5%; /* 10px */
+
+    font-size: $font_size_m;
+
+    @include media(">m") {
+        font-size: $font_size_t;
+    }
+
+    @include media(">t") {
+        font-size: $font_size_l;
+    }
 }
 
 body {
