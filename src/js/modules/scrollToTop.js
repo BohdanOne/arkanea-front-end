@@ -1,6 +1,6 @@
-export default () => {
-  const logo = document.querySelector('.js-logo');
+const logo = document.querySelector('.js-logo');
 
+export default () => {
   logo.addEventListener('click', e => {
     e.preventDefault();
     scrollToTop();

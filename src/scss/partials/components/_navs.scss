@@ -1,14 +1,15 @@
 .c-nav {
+    height: 60px;
+
     display: flex;
     align-items: center;
-
-    height: 60px;
 }
 
 .c-nav__list {
-    display: flex;
     margin: 0;
     padding: 0;
+
+    display: flex;
 
     @include media('<850px') {
         display: none;
@@ -20,28 +21,34 @@
 }
 
 .c-nav__label {
-    text-transform: uppercase;
+    color: $color_text;
+
     font-size: $font_size_regular;
     font-weight: $font_regular;
-    color: $color_text;
+
+    text-transform: uppercase;
+
     &:hover {
         color: $color_button_bg;
     }
 }
 
-// Styles applied when hamburger is clicked
-.l-header.full-screen {
+/* Styles applied when hamburger menu is opened
+========================================================================== */
+
+.l-header.is-expanded {
     .c-nav {
-        width: 100%;
         height: 100%;
+        width: 100%;
+
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
 
         .c-nav__list {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
         }
 
         .c-nav__item {

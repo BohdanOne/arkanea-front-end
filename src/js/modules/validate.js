@@ -5,7 +5,7 @@ export const validateQuoteForm = () => {
   quoteForm.addEventListener('submit', e => {
     e.preventDefault();
 
-    test(email, 'Please enter valid email!')
+    test(email, 'Please enter valid email!');
   });
 };
 
@@ -23,39 +23,38 @@ export const validateContactForm = () => {
       reset(name);
       reset(email);
       reset(message);
-      header.innerText = "Message sent!"
+      header.innerText = 'Message sent!';
     } else {
       header.innerText = 'contact us';
       if (!isFilled(name)) indicateInvalid(name, 'Please enter your name!');
       if (!isValid(email)) indicateInvalid(email, 'Please enter valid email!');
-      if (!isFilled(message)) indicateInvalid(message, 'Please enter some message!');
+      if (!isFilled(message))
+        indicateInvalid(message, 'Please enter some message!');
     }
   });
 };
 
+/* Helper methods
+========================================================================== */
 
-// Helper methods ==============================================================================
-
-function test(element, errorMessage) {
+const test = (element, errorMessage) => {
   isValid(element) ? reset(element) : indicateInvalid(element, errorMessage);
-}
+};
 
-function isValid(email) {
+const isValid = email => {
   const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return emailPattern.test(email.value);
-}
+};
 
-function isFilled(element) {
-  return element.value !== '';
-}
+const isFilled = element => element.value !== '';
 
-function indicateInvalid(element, message) {
+const indicateInvalid = (element, message) => {
   element.style.border = '1px solid #f7564b';
   element.nextElementSibling.innerText = message;
-}
+};
 
-function reset(element) {
+const reset = element => {
   element.value = '';
   element.style.border = 'none';
   element.nextElementSibling.innerText = '';
-}
+};

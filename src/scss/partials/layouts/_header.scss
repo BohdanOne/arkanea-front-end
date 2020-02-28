@@ -12,12 +12,12 @@
     background: transparent;
 
     transition: transform $transition_speed ease-in-out,
-        background $transition_speed ease-in-out;
+                background $transition_speed ease-in-out;
 
-    &.full-screen {
+    &.is-expanded {
         height: 100vh;
         width: 100vw;
-        padding: 20px;
+        padding: $gutter;
         background: $color_black_stories;
     }
 }
@@ -25,30 +25,24 @@
 .l-header__navbar {
     width: 100%;
     max-width: $size_inner;
+
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 $gutter;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
+    justify-content: space-between;
 }
 
-.l-header.full-screen .l-header__navbar {
+.l-header.is-expanded .l-header__navbar {
     height: 100%;
     width: 100%;
+
     flex-direction: column-reverse;
     align-items: center;
 }
 
-.c-logo__svg {
-    fill: $color_text;
-    transition: fill $transition_speed ease-in-out;
-
-    &:hover {
-        cursor: pointer;
-        fill: $color_button_bg;
-    }
-}
-
+// Invert header content colors when page is scrolled
 .l-header.is-scrolled {
     transform: translateY(-75px);
 

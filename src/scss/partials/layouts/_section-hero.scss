@@ -4,10 +4,7 @@
 
     padding: 345px 0 120px;
 
-    background-color: $color_black;
-    background-image: url('/static/img/hero-image.jpg');
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
+    background: $color_black_stories url('/static/img/hero-image.jpg') no-repeat 50% 50%;
     background-size: cover;
 
     @include media('>t-m') {

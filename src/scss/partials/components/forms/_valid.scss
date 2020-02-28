@@ -1,12 +1,19 @@
+/* Warning displayed when input not valid
+========================================================================== */
 .f-validation-message {
-    margin: 0;
     position: absolute;
     top: 5px;
     left: 5px;
+
+    margin: 0;
+
+    color: $color_button_bg;
+
     font-size: $font_size_placeholder;
     font-weight: $font_regular;
-    color: $color_button_bg;
 }
+/*
+========================================================================== */
 
 .parsley-error {
     border-color: $color_red;

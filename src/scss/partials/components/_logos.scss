@@ -1,3 +1,10 @@
-.c-logo {
+.c-logo__svg {
+    fill: $color_text;
 
+    transition: fill $transition_speed ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        fill: $color_button_bg;
+    }
 }

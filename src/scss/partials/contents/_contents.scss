@@ -1,4 +1,3 @@
-
 // Default style for content text
 .t-content {
     @extend %helper-clear-margins;
@@ -38,7 +37,7 @@
                 margin-right: 5px;
                 font-size: 2rem;
                 font-weight: 700;
-                content: counter(my-awesome-counter)'.';
+                content: counter(my-awesome-counter) '.';
                 vertical-align: middle;
                 color: $color_black;
             }
@@ -63,23 +62,39 @@
     }
 }
 
+/* Hero Section
+========================================================================== */
 .t-content--hero {
     p {
         margin: 1em 0;
         max-width: 550px;
 
         color: $color_text;
+
         font-size: $font_size_hero;
-        line-height: 1.25;
         font-weight: $font_light;
+        line-height: 1.25;
     }
 
     &--accent {
-        font-weight: $font_semi-bold;;
+        font-weight: $font_semi-bold;
     }
 }
 
-// Sizes
-.t-content--alt {
-    font-size: 1.6rem;
+/* Footer - Copyrights
+========================================================================== */
+.t-content--footer {
+    height: 100%;
+    max-width: $size_inner;
+
+    margin: 0 auto;
+    padding: 0 $gutter;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $color_text;
+    font-size: $font_size_copyright;
+    font-weight: $font_regular;
 }

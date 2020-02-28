@@ -2,7 +2,6 @@
 /* Base
    ========================================================================== */
 html {
-
     font-size: $font_size_m;
 
     @include media(">m") {
@@ -36,8 +35,8 @@ a {
     transition: color $transition_speed ease-in-out;
 
     &:hover {
-        text-decoration: none;
         color: $color_button_bg;
+        text-decoration: none;
     }
 }
 

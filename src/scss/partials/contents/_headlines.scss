@@ -11,37 +11,47 @@
     line-height: 1;
 }
 
+/* Hero Section
+========================================================================== */
+
 .t-head--main {
+    color: $color_text;
+
     font-size: $font_size_heading--main;
     font-weight: $font_bold;
-
-    color: $color_text;
 
     @include media("<m-t") {
         font-size: $font_size_heading--contact;
     }
 }
 
+/* Stories Section
+========================================================================== */
 .t-head--stories {
+    color: $color_black_stories;
+
     font-size: $font_size_heading--stories;
     font-weight: $font_semi-bold;
-    color: $color_black_stories;
 }
 
+/* Contact Section
+========================================================================== */
 .t-head--contact {
-    font-size: $font_size_heading--contact;
-    font-weight: $font_bold;
+    margin-bottom: 70px;
 
     color: $color_contact_header;
 
+    font-size: $font_size_heading--contact;
+    font-weight: $font_bold;
+
     text-align: center;
-    margin-bottom: 70px;
 }
 
 .t-head--contact-subhead {
-    font-size: $font_size_hero;
-    font-weight: $font_regular;
+    margin-bottom: 20px;
 
     color: $color_contact_subheader;
-    margin-bottom: 20px;
+
+    font-size: $font_size_hero;
+    font-weight: $font_regular;
 }

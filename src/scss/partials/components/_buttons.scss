@@ -65,9 +65,12 @@
     }
 }
 
+/* Hamburger
+========================================================================== */
 .c-btn--hamburger {
-    width: 60px;
     height: 45px;
+    width: 60px;
+
     transform: rotate(0deg);
     transition: transform .5s ease-in-out;
 

@@ -1,6 +1,6 @@
 import { tns } from 'tiny-slider/src/tiny-slider';
 
-const initializeSlider = () => {
+export default () => {
   const slider = tns({
     container: '.c-slides__list',
     items: 1,
@@ -15,5 +15,3 @@ const initializeSlider = () => {
     speed: 500
   });
 };
-
-export default initializeSlider;

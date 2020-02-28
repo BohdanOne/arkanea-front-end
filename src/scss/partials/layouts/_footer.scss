@@ -1,19 +1,6 @@
 .l-footer {
+    height: 70px;
     width: 100%;
 
     background: $color_footer_bg;
-}
-
-.l-footer__content {
-    height: 70px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.l-footer__copyrights {
-    color: $color_text;
-    font-size: $font_size_copyright;
-    font-weight: $font_regular;
 }
