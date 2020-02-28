@@ -4,10 +4,10 @@
 
     padding: 130px 0 40px;
 
-    background: $color_black_stories url('/static/img/slides-bg.jpg') no-repeat 50% 50%;
+    background: $color_black_stories url('../img/slides-bg.jpg') no-repeat 50% 50%;
     background-size: cover;
 
     @include media('>t-m') {
-        background-image: url('/static/img/slides-bg@2x.jpg');
+        background-image: url('../img/slides-bg@2x.jpg');
     }
 }

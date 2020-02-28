@@ -1274,11 +1274,11 @@ input:checked + .f-choose__indicator:after {
   min-height: 400px;
   width: 100%;
   padding: 130px 0 40px;
-  background: #383838 url("/static/img/slides-bg.jpg") no-repeat 50% 50%;
+  background: #383838 url("../img/slides-bg.jpg") no-repeat 50% 50%;
   background-size: cover; }
   @media (min-width: 981px) {
     .l-slides {
-      background-image: url("/static/img/slides-bg@2x.jpg"); } }
+      background-image: url("../img/slides-bg@2x.jpg"); } }
 
 .l-contact {
   padding-top: 80px;
