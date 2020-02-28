@@ -1251,11 +1251,11 @@ input:checked + .f-choose__indicator:after {
   width: 100%;
   min-height: 100vh;
   padding: 345px 0 120px;
-  background: #383838 url("/static/img/hero-image.jpg") no-repeat 50% 50%;
+  background: #383838 url("../img/hero-image.jpg") no-repeat 50% 50%;
   background-size: cover; }
   @media (min-width: 981px) {
     .l-hero {
-      background-image: url("/static/img/hero-image@2x.jpg"); } }
+      background-image: url("../img/hero-image@2x.jpg"); } }
 
 .l-stories {
   width: 100%;
